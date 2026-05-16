@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - NorthReach Creators</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            color: #1a1a2e;
+            line-height: 1.6;
+            background: #f8f9fa;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #0d1b2a;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #4FC3F7;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #FF6B35;
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #4FC3F7, #FF6B35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: #B3E5FC;
+        }
+        
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        /* Form Selection */
+        .form-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .form-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .form-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+        
+        .form-card.brand {
+            border-top: 5px solid #FF6B35;
+        }
+        
+        .form-card.creator {
+            border-top: 5px solid #4FC3F7;
+        }
+        
+        .form-icon {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-card h2 {
+            color: #0d1b2a;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        
+        .form-card p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+        
+        .form-btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: white;
+            transition: transform 0.3s;
+        }
+        
+        .form-btn.brand-btn {
+            background: linear-gradient(135deg, #FF6B35, #FF8A5B);
+        }
+        
+        .form-btn.creator-btn {
+            background: linear-gradient(135deg, #4FC3F7, #29B6F6);
+        }
+        
+        .form-btn:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* Commission Notice */
+        .commission-notice {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .commission-notice p {
+            color: #856404;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .commission-notice strong {
+            color: #664d03;
+        }
+        
+        /* Footer */
+        footer {
+            background: #0d1b2a;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .form-selector { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="get-started.html">Get Started</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>Let's Work Together</h1>
+        <p>Choose your path below to get started with NorthReach Creators</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="form-selector">
+            <!-- Brand Card -->
+            <div class="form-card brand">
+                <div class="form-icon">🏢</div>
+                <h2>I'm a Brand</h2>
+                <p>Looking to partner with AI/Tech creators to promote your product or service? We'll connect you with the perfect creators for your campaign.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfmg9E2Tus5-y-6K2YL2I5s--1IBrgzjz6wK7Ex-ZU6ytdhgQ/viewform" target="_blank" class="form-btn brand-btn">Apply as a Brand</a>
+            </div>
+
+            <!-- Creator Card -->
+            <div class="form-card creator">
+                <div class="form-icon">🎥</div>
+                <h2>I'm a Creator</h2>
+                <p>Are you an AI/Tech content creator looking for brand partnerships? Join our network and get access to exclusive sponsorship opportunities.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfTEDi2lYVQymrgjZZuMsI6TCQvDIe20VC87bU7pp0ccFn4hg/viewform" target="_blank" class="form-btn creator-btn">Apply as a Creator</a>
+            </div>
+        </div>
+
+        <!-- Commission Notice -->
+        <div class="commission-notice">
+            <p><strong>Please Note:</strong> NorthReach Creators operates on a commission-based model. We charge a 20-30% commission on each collaboration to cover campaign management, creator coordination, contract negotiation, and performance tracking. Final rates vary based on campaign scope and deliverables. All pricing is discussed transparently before any commitment.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 NorthReach Creators. All rights reserved.</p>
+    </footer>
+</body>
+</html>
