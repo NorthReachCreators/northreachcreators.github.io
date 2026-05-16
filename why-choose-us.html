@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us - NorthReach Creators</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            color: #1a1a2e;
+            line-height: 1.6;
+        }
+        
+        /* Navigation */
+        nav {
+            background: #0d1b2a;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #4FC3F7;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #FF6B35;
+        }
+        
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #4FC3F7, #FF6B35);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            color: #B3E5FC;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        /* Content Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .section {
+            margin-bottom: 5rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: #0d1b2a;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        /* Value Props Grid */
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .value-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid #4FC3F7;
+        }
+        
+        .value-card h3 {
+            color: #0d1b2a;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .value-card p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .icon {
+            font-size: 2rem;
+        }
+        
+        /* Process Steps */
+        .process-steps {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
+            border-radius: 12px;
+        }
+        
+        .step {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            background: linear-gradient(135deg, #4FC3F7, #29B6F6);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+        
+        .step-content h3 {
+            color: #0d1b2a;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .step-content p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #FF6B35, #FF8A5B);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 12px;
+            margin: 4rem 0;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        .cta-btn {
+            display: inline-block;
+            background: white;
+            color: #FF6B35;
+            padding: 1.2rem 3rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.3s;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* Footer */
+        footer {
+            background: #0d1b2a;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .value-grid { grid-template-columns: 1fr; }
+            .step { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="why-choose-us.html">Why Choose Us</a></li>
+            <li><a href="get-started.html">Get Started</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero">
+        <h1>Why Choose NorthReach Creators?</h1>
+        <p>We're not just another influencer agency. We're specialists in AI/Tech marketing who understand your audience and deliver measurable results.</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Value Props -->
+        <section class="section">
+            <h2 class="section-title">What Makes Us Different</h2>
+            <div class="value-grid">
+                <div class="value-card">
+                    <h3><span class="icon">🎯</span> The Right Creators</h3>
+                    <p>We match brands with creators based on audience alignment and values—not just follower counts. Every partnership is strategically chosen to maximize engagement and ROI.</p>
+                </div>
+                <div class="value-card">
+                    <h3><span class="icon">⚡</span> No Contract Chaos</h3>
+                    <p>We handle all negotiations, contracts, and deliverables. You focus on your product while we manage the entire creator relationship from start to finish.</p>
+                </div>
+                <div class="value-card">
+                    <h3><span class="icon">🤝</span> Extension of Your Team</h3>
+                    <p>Most brands waste time on creator vetting and messy contracts. We handle everything as an extension of your marketing team, streamlining the entire process.</p>
+                </div>
+                <div class="value-card">
+                    <h3><span class="icon">📈</span> Results-Driven Campaigns</h3>
+                    <p>Every campaign is built around clear KPIs and performance metrics. We track engagement, conversions, and ROI so you know exactly what you're getting.</p>
+                </div>
+                <div class="value-card">
+                    <h3><span class="icon">🛡️</span> Halal Business Practices</h3>
+                    <p>Our partnerships follow ethical, halal-compliant practices. We work exclusively with male creators and ensure all content aligns with our values.</p>
+                </div>
+                <div class="value-card">
+                    <h3><span class="icon">💰</span> Transparent Pricing</h3>
+                    <p>We operate on a simple 20-30% commission model. No hidden fees, no surprises—just straightforward pricing that scales with your success.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works -->
+        <section class="section">
+            <div class="process-steps">
+                <h2 class="section-title">How We Work</h2>
+                
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Discovery & Strategy</h3>
+                        <p>We learn about your brand, product, target audience, and campaign goals. Then we develop a tailored influencer strategy that aligns with your objectives.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Creator Matching</h3>
+                        <p>We present you with 2-4 hand-selected creators from our network who perfectly match your brand values, audience demographics, and budget.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Contract & Coordination</h3>
+                        <p>Once you approve the creators, we handle all contracts, negotiations, timelines, and deliverables. You stay in the loop without the administrative headache.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Content Creation & Approval</h3>
+                        <p>Creators produce authentic content showcasing your product. You review and approve before it goes live, ensuring brand alignment and quality.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Launch & Performance</h3>
+                        <p>Content goes live across YouTube, Instagram, and other platforms. We track performance metrics and provide detailed reports on engagement and conversions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <div class="cta-section">
+            <h2>Ready to Work With Us?</h2>
+            <p>Join the brands already growing through authentic influencer partnerships.</p>
+            <a href="get-started.html" class="cta-btn">Get Started Today</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 NorthReach Creators. All rights reserved.</p>
+    </footer>
+</body>
+</html>
