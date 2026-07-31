@@ -3,266 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - NorthReachCreators</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            color: #1a1a2e;
-            line-height: 1.6;
-        }
-        
-        /* Navigation */
-        nav {
-            background: #0d1b2a;
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 2.5rem;
-            flex-wrap: wrap;
-        }
-        
-        nav a {
-            color: #4FC3F7;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: #FF6B35;
-        }
-        
-        /* Hero */
-        .hero {
-            background: linear-gradient(135deg, #0d1b2a 0%, #1b2838 100%);
-            color: white;
-            padding: 5rem 2rem;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #4FC3F7, #FF6B35);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        
-        .hero p {
-            font-size: 1.3rem;
-            color: #B3E5FC;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        /* Container */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-        
-        /* Story Section */
-        .story-section {
-            background: white;
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            margin-bottom: 3rem;
-        }
-        
-        .story-section h2 {
-            color: #0d1b2a;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            border-left: 5px solid #4FC3F7;
-            padding-left: 1rem;
-        }
-        
-        .story-section p {
-            color: #555;
-            line-height: 1.9;
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        /* Values Grid */
-        .values-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-        
-        .value-box {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 12px;
-            text-align: center;
-            border-top: 4px solid #FF6B35;
-        }
-        
-        .value-box h3 {
-            color: #0d1b2a;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-        
-        .value-box p {
-            color: #666;
-            line-height: 1.7;
-        }
-        
-        .value-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        
-        /* CTA */
-        .cta-section {
-            background: linear-gradient(135deg, #4FC3F7, #29B6F6);
-            color: white;
-            padding: 3rem 2rem;
-            text-align: center;
-            border-radius: 12px;
-            margin-top: 3rem;
-        }
-        
-        .cta-section h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        .cta-section p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-        }
-        
-        .cta-btn {
-            display: inline-block;
-            background: white;
-            color: #4FC3F7;
-            padding: 1.2rem 3rem;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 1.1rem;
-            transition: transform 0.3s;
-        }
-        
-        .cta-btn:hover {
-            transform: translateY(-3px);
-        }
-        
-        /* Footer */
-        footer {
-            background: #0d1b2a;
-            color: white;
-            padding: 2rem;
-            text-align: center;
-            margin-top: 4rem;
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2rem; }
-            .values-grid { grid-template-columns: 1fr; }
-        }
-    </style>
+    <title>About — NorthReachCreators</title>
+    <meta name="description" content="NorthReachCreators was founded in April 2026 by Mohammad in Cambridge, Ontario, to build halal-first, results-driven creator partnerships for AI and tech brands.">
+    <meta property="og:title" content="About — NorthReachCreators">
+    <meta property="og:description" content="Founded in April 2026 in Cambridge, Ontario. Building halal-first creator partnerships for AI and tech brands.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#0A0E1A">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="why-choose-us.html">Why Choose Us</a></li>
-            <li><a href="get-started.html">Get Started</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+    <header class="site-nav">
+        <div class="nav-inner">
+            <a href="index.html" class="logo">NORTHREACH<span class="dot">CREATORS</span></a>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="why-choose-us.html">Why Choose Us</a></li>
+                    <li><a href="get-started.html">Get Started</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Hero -->
-    <div class="hero">
+    <div class="hero hero-sm">
         <h1>Our Story</h1>
-        <p>Building bridges between innovative AI/Tech brands and the creators who understand them best.</p>
+        <p>Building bridges between innovative AI/tech brands and the creators who understand them best.</p>
     </div>
 
-    <!-- Main Content -->
-    <div class="container">
-        <!-- Founder Story -->
-        <div class="story-section">
-            <h2>How We Started</h2>
-            <p>NorthReachCreators was founded in April 2026 by Mohammad, a 19-year-old entrepreneur with a vision to revolutionize how AI and tech brands connect with their audiences.</p>
-            
-            <p>Having witnessed the explosive growth of AI tools and the disconnect between innovative products and the creators who could authentically showcase them, Mohammad saw an opportunity. He recognized that most influencer agencies treated tech sponsorships like any other campaign—but AI/Tech content requires creators who truly understand the space and audiences who trust their expertise.</p>
-            
-            <p>What started as a passion project quickly evolved into a full-service agency. Today, we're building a reputation for delivering results-driven campaigns that feel authentic, not forced. We're still growing, still learning, and still committed to doing business the right way—with transparency, integrity, and halal principles at our core.</p>
-        </div>
+    <section>
+        <div class="container">
+            <div class="content-block">
+                <h2>How We Started</h2>
+                <p>NorthReachCreators was founded in April 2026 by Mohammad in Cambridge, Ontario, with a vision to change how AI and tech brands connect with their audiences.</p>
+                <p>Having watched the explosive growth of AI tools alongside a disconnect between innovative products and the creators who could authentically showcase them, Mohammad saw an opportunity. Most influencer agencies treat tech sponsorships like any other campaign — but AI/tech content needs creators who understand the space, and audiences who trust their expertise.</p>
+                <p>What started as a passion project has grown into a full-service agency. We're building a reputation for campaigns that feel authentic, not forced — with transparency, integrity, and halal principles at our core.</p>
+            </div>
 
-        <!-- Mission -->
-        <div class="story-section">
-            <h2>Our Mission</h2>
-            <p>We exist to simplify influencer marketing for AI/Tech brands. No messy contracts. No creator vetting headaches. No campaigns that miss the mark.</p>
-            
-            <p>We handle everything—from matching you with the perfect creators to negotiating contracts, managing deliverables, and tracking performance. You focus on building great products. We'll make sure the right people hear about them.</p>
-        </div>
+            <div class="content-block">
+                <h2>Our Mission</h2>
+                <p>We exist to simplify influencer marketing for AI/tech brands. No messy contracts, no creator vetting headaches, no campaigns that miss the mark.</p>
+                <p>We handle everything — from matching you with the right creators to negotiating contracts, managing deliverables, and tracking performance. You focus on building great products. We'll make sure the right people hear about them.</p>
+            </div>
 
-        <!-- Values -->
-        <div class="story-section">
-            <h2>Our Values</h2>
-            <div class="values-grid">
-                <div class="value-box">
-                    <div class="value-icon">🤝</div>
-                    <h3>Trust</h3>
-                    <p>We operate with complete transparency. No hidden fees, no surprises—just honest partnerships built on mutual respect.</p>
-                </div>
-                
-                <div class="value-box">
-                    <div class="value-icon">✨</div>
-                    <h3>Quality</h3>
-                    <p>Every creator in our network is hand-selected for their authenticity, engagement, and expertise in the AI/Tech space.</p>
-                </div>
-                
-                <div class="value-box">
-                    <div class="value-icon">🛡️</div>
-                    <h3>Integrity</h3>
-                    <p>We follow halal business practices, working exclusively with male creators and ensuring all partnerships align with our ethical standards.</p>
-                </div>
-                
-                <div class="value-box">
-                    <div class="value-icon">📈</div>
-                    <h3>Results</h3>
-                    <p>We're not here to run vanity campaigns. Every partnership is designed to drive real engagement, conversions, and ROI for your brand.</p>
+            <div class="content-block" style="max-width: 980px; margin-bottom: 0;">
+                <h2>Our Values</h2>
+                <div class="values-grid">
+                    <div class="value-box">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="7" y="3" width="6" height="6" rx="1.5"></rect>
+                                <rect x="11" y="15" width="6" height="6" rx="1.5"></rect>
+                                <path d="M10 9v3a2 2 0 0 0 2 2h2"></path>
+                            </svg>
+                        </div>
+                        <h3>Trust</h3>
+                        <p>We operate with complete transparency — no hidden fees, no surprises, just honest partnerships built on mutual respect.</p>
+                    </div>
+                    <div class="value-box">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5L12 3Z"></path>
+                            </svg>
+                        </div>
+                        <h3>Quality</h3>
+                        <p>Every creator in our network is hand-selected for authenticity, engagement, and expertise in the AI/tech space.</p>
+                    </div>
+                    <div class="value-box">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"></path>
+                                <path d="M9 12l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3>Halal-First Integrity</h3>
+                        <p>No adult content, no alcohol, no gambling, and a creator network that's exclusively male — ethical standards we don't compromise on.</p>
+                    </div>
+                    <div class="value-box">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 19V10M11 19V5M18 19v-6"></path>
+                            </svg>
+                        </div>
+                        <h3>Results</h3>
+                        <p>We're not here to run vanity campaigns. Every partnership is designed to drive real engagement, conversions, and ROI.</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <!-- CTA -->
-        <div class="cta-section">
-            <h2>Let's Build Something Together</h2>
-            <p>Whether you're a brand looking to grow or a creator ready for your next partnership, we'd love to hear from you.</p>
-            <a href="get-started.html" class="cta-btn">Get Started</a>
+    <section>
+        <div class="container">
+            <div class="cta-band">
+                <h2>Let's Build Something Together</h2>
+                <p>Whether you're a brand looking to grow or a creator ready for your next partnership, we'd love to hear from you.</p>
+                <div class="btn-row">
+                    <a href="get-started.html" class="btn btn-primary">Get Started</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 NorthReachCreators. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a href="index.html" class="logo">NORTHREACH<span class="dot">CREATORS</span></a>
+            <div class="btn-row">
+                <a href="mailto:mohammad@northreachcreators.com" class="btn btn-secondary">Contact Us</a>
+                <a href="https://www.instagram.com/northreachcreators" target="_blank" rel="noopener" class="btn btn-secondary">Instagram</a>
+            </div>
+            <p class="footer-bottom">&copy; 2026 NorthReachCreators. Cambridge, Ontario. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
